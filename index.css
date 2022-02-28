@@ -198,6 +198,10 @@ section .topsection .short #longLink {
 }
 
 section .topsection .short .shorten {
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  height: 70px;
   padding: 20px;
   width: 20%;
   background-color: #2acfcf;
@@ -257,7 +261,7 @@ section .topsection .result .box .newShortLink p {
   color: cyan;
 }
 
-section .topsection .result .box .newShortLink input {
+section .topsection .result .box .newShortLink button {
   padding: 15px;
   color: white;
   background-color: cyan;
@@ -266,7 +270,7 @@ section .topsection .result .box .newShortLink input {
   border: none;
 }
 
-section .topsection .result .box .newShortLink input:hover {
+section .topsection .result .box .newShortLink button:hover {
   opacity: 0.5;
   cursor: pointer;
 }
@@ -319,18 +323,24 @@ section .topsection .lowerSection .extra .brand {
   background-color: white;
   margin: 20px;
   margin-top: 30px;
-  padding: 50px 20px 50px 20px;
+  padding: 30px 20px;
+}
+
+section .topsection .lowerSection .extra .brand h3 {
+  text-align: center;
 }
 
 section .topsection .lowerSection .extra .brand img {
   background-color: #3b3054;
   width: 60px;
   height: 60px;
+  text-align: center;
   border-radius: 50%;
   padding: 15px;
-  top: -30px;
-  left: 20px;
-  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 10px;
 }
 
 section .topsection .lowerSection .extra .brand p {
@@ -449,7 +459,7 @@ footer #foot .social img:hover {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  section .topsection .short input {
+  section .topsection .short button {
     width: 100% !important;
   }
   section .topsection .result {
@@ -469,7 +479,7 @@ footer #foot .social img:hover {
     padding: 10px;
   }
   section .topsection .result .box p {
-    font-size: 25px;
+    font-size: 12px !important;
     margin-bottom: 20px;
     text-align: center;
   }
@@ -493,7 +503,7 @@ footer #foot .social img:hover {
     color: cyan;
     font-size: 25px;
   }
-  section .topsection .result .box .newShortLink input {
+  section .topsection .result .box .newShortLink button {
     width: 100%;
   }
   footer #foot {
@@ -579,7 +589,7 @@ footer #foot .social img:hover {
   header nav .ham .reg p {
     margin-bottom: 20px;
   }
-  header nav .ham .reg input {
+  header nav .ham .reg button {
     width: 100%;
   }
   .ham.active {
@@ -636,15 +646,19 @@ footer #foot .social img:hover {
     padding: 5px;
   }
   section .extra::before {
-    left: 50% !important;
-    width: 2% !important;
-    min-height: 50em;
+    display: none;
   }
   section .extra img {
     left: 45% !important;
   }
   section .extra .brand {
     text-align: center;
+  }
+  section .extra .det {
+    margin-top: -1px !important;
+  }
+  section .extra .cust {
+    margin-top: -1px !important;
   }
   section .boost {
     background: url("images/bg-boost-mobile.svg"), #3b3054 !important;

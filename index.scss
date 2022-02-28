@@ -134,6 +134,10 @@ section {
         margin-right: 20px;
       }
       .shorten {
+        outline: none;
+        border: none;
+        border-radius: 10px;
+        height: 70px;
         padding: 20px;
         width: 20%;
         background-color: hsl(180, 66%, 49%);
@@ -172,7 +176,7 @@ section {
           p {
             color: cyan;
           }
-          input {
+          button {
             padding: 15px;
             color: white;
             background-color: cyan;
@@ -221,16 +225,25 @@ section {
           background-color: white;
           margin: 20px;
           margin-top: 30px;
-          padding: 50px 20px 50px 20px;
+          padding: 30px 20px ;
+          h3{
+            text-align: center;
+          }
           img {
             background-color: hsl(257, 27%, 26%);
             width: 60px;
             height: 60px;
+            text-align: center;
             border-radius: 50%;
             padding: 15px;
-            top: -30px;
-            left: 20px;
-            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-bottom: 10px;
+            // width: 50%;
+            // top: -30px;
+            // left: 20px;
+            // position: absolute;
           }
           p {
             word-spacing: 8px;
@@ -336,7 +349,7 @@ footer {
         width: 100%;
         padding: 30px;
         flex-direction: column;
-        input {
+        button {
           width: 100% !important;
         }
       }
@@ -349,7 +362,7 @@ footer {
           padding: 10px;
 
           p {
-            font-size: 25px;
+            font-size: 12px !important;
             margin-bottom: 20px;
             text-align: center;
           }
@@ -368,7 +381,7 @@ footer {
               color: cyan;
               font-size: 25px;
             }
-            input {
+            button {
               width: 100%;
             }
           }
@@ -445,7 +458,7 @@ footer {
           p {
             margin-bottom: 20px;
           }
-          input {
+          button {
             width: 100%;
           }
         }
@@ -500,15 +513,19 @@ footer {
 
       padding: 5px;
       &::before {
-        left: 50% !important;
-        width: 2% !important;
-        min-height: 50em;
+        display: none;
       }
       img {
         left: 45% !important;
       }
       .brand {
         text-align: center;
+      }
+      .det{
+        margin-top: -1px !important;
+      }
+      .cust{
+        margin-top: -1px !important;
       }
     }
     .boost {

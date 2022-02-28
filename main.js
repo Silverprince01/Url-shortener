@@ -20,12 +20,10 @@ shorten.addEventListener('click', async function getShortLink(){
     const shortLinkbox = document.createElement("div");
     const newShortLink = document.createElement("div");
     const shortLink = document.createElement("p");
-    const copybtn = document.createElement("input");
+    const copybtn = document.createElement("button");
     const line = document.createElement("hr");
 
-    copybtn.type = "button";
-    copybtn.name = "button";
-    copybtn.value = "Copy";
+    copybtn.textContent = "Copy";
 
     shortLinkbox.classList.add("box")
     lonLink.classList.add("longLink");
@@ -49,7 +47,7 @@ shortLinkbox.appendChild(lonLink);
     
     copybtn.addEventListener('click', ()=>{
         navigator.clipboard.writeText(shortLink.textContent);
-        copybtn.value = "Copied!";
+        copybtn.textContent = "Copied!";
         copybtn.style.background = "hsl(257, 27%, 26%)"
 
     })
