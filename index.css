@@ -151,11 +151,6 @@ main .more .build input {
   background-color: #2acfcf;
 }
 
-main .more .build input:hover {
-  opacity: 0.5;
-  cursor: pointer;
-}
-
 main .more img {
   position: relative;
   left: 100px;

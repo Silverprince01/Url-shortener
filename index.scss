@@ -93,10 +93,10 @@ main {
         border: none;
         color: white;
         background-color: hsl(180, 66%, 49%);
-        &:hover {
-          opacity: 0.5;
-          cursor: pointer;
-        }
+        // &:hover {
+        //   opacity: 0.5;
+        //   cursor: pointer;
+        // }
       }
     }
     img {
