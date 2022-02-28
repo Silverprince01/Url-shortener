@@ -141,7 +141,7 @@ main .more .build h1 span {
   display: block;
 }
 
-main .more .build input {
+main .more .build button {
   margin-top: 30px;
   width: 200px;
   padding: 20px;
