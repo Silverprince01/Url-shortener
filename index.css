@@ -135,6 +135,7 @@ main .more .build h1 {
   font-weight: bolder;
   line-height: 70px;
   font-weight: 700;
+  color: #232127;
 }
 
 main .more .build h1 span {
@@ -160,7 +161,7 @@ main .more img {
 section {
   background-color: #bfbfbf;
   height: 100%;
-  padding: 0px 60px;
+  padding: 0px 50px;
 }
 
 section .topsection {
@@ -305,6 +306,7 @@ section .topsection .lowerSection .extra {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding-bottom: 100px;
 }
 
 section .topsection .lowerSection .extra::before {
@@ -312,7 +314,7 @@ section .topsection .lowerSection .extra::before {
   position: absolute;
   background-color: cyan;
   width: 80%;
-  height: 10px;
+  height: 1%;
   margin: 10px;
   left: 50px;
 }
@@ -321,8 +323,6 @@ section .topsection .lowerSection .extra .brand {
   border-radius: 10px;
   position: relative;
   background-color: white;
-  margin: 20px;
-  margin-top: 30px;
   padding: 30px 20px;
 }
 
@@ -348,20 +348,20 @@ section .topsection .lowerSection .extra .brand p {
 }
 
 section .topsection .lowerSection .extra .det {
-  margin-top: 90px;
+  margin: 90px 20px 10px 20px;
 }
 
 section .topsection .lowerSection .extra .cust {
-  margin-top: 160px;
+  margin: 180px 0px 10px 0;
 }
 
 article .boost {
   background: url("images/bg-boost-desktop.svg"), #3b3054;
-  min-height: 200px;
   color: white;
   position: relative;
   display: block;
   text-align: center;
+  padding: 30px;
 }
 
 article .boost p {
@@ -449,7 +449,6 @@ footer #foot .social img:hover {
   main .more h1 {
     font-size: 45px !important;
     width: 100% !important;
-    margin-right: -10%;
   }
   section .topsection .short {
     width: 100%;
@@ -559,6 +558,8 @@ footer #foot .social img:hover {
     transition: 0.3s;
     width: 100%;
     padding: 20px;
+    -webkit-box-shadow: 0 10px 27px rgba(15, 26, 39, 0.582);
+            box-shadow: 0 10px 27px rgba(15, 26, 39, 0.582);
     z-index: 1;
     font-size: 20px;
     text-align: center;
@@ -616,14 +617,29 @@ footer #foot .social img:hover {
     justify-items: flex-start;
     width: 100%;
   }
+  main .more h1 {
+    font-size: 55px !important;
+  }
   main .more img {
-    height: 500px;
-    left: 0;
+    height: 300px;
+    left: 10px;
     margin-bottom: 20px;
+  }
+  section {
+    padding: 15px;
   }
   section .short {
     background: url("images/bg-shorten-desktop.svg"), #3b3054;
     background-repeat: no-repeat;
+    -webkit-transform: translateY(-60%) !important;
+            transform: translateY(-60%) !important;
+  }
+  section .short input {
+    padding: 5px;
+    height: 50px !important;
+  }
+  section .short button {
+    height: 50px !important;
   }
   section .result {
     width: 100%;
@@ -643,10 +659,12 @@ footer #foot .social img:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 5px;
+    width: 100%;
   }
   section .extra::before {
-    display: none;
+    width: 2% !important;
+    height: 80% !important;
+    left: 47% !important;
   }
   section .extra img {
     left: 45% !important;
@@ -655,10 +673,10 @@ footer #foot .social img:hover {
     text-align: center;
   }
   section .extra .det {
-    margin-top: -1px !important;
+    margin: 80px 0px 80px 0px !important;
   }
   section .extra .cust {
-    margin-top: -1px !important;
+    margin: 0px 0px 10px 0 !important;
   }
   section .boost {
     background: url("images/bg-boost-mobile.svg"), #3b3054 !important;

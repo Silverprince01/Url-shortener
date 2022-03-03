@@ -81,6 +81,7 @@ main {
         font-weight: bolder;
         line-height: 70px;
         font-weight: 700;
+        color: hsl(260, 8%, 14%);
         span {
           display: block;
         }
@@ -109,7 +110,7 @@ main {
 section {
   background-color: hsl(0, 0%, 75%);
   height: 100%;
-  padding: 0px 60px;
+  padding: 0px 50px;
   .topsection {
     width: 100%;
     .short {
@@ -210,12 +211,13 @@ section {
         justify-content: space-between;
         align-items: center;
         position: relative;
+        padding-bottom: 100px;
         &::before {
           content: "";
           position: absolute;
           background-color: cyan;
           width: 80%;
-          height: 10px;
+          height: 1%;
           margin: 10px;
           left: 50px;
         }
@@ -223,10 +225,9 @@ section {
           border-radius: 10px;
           position: relative;
           background-color: white;
-          margin: 20px;
-          margin-top: 30px;
-          padding: 30px 20px ;
-          h3{
+          // margin-top: 30px;
+          padding: 30px 20px;
+          h3 {
             text-align: center;
           }
           img {
@@ -250,10 +251,12 @@ section {
           }
         }
         .det {
-          margin-top: 90px;
+          // margin-top: 90px;
+          margin: 90px 20px 10px 20px;
         }
         .cust {
-          margin-top: 160px;
+          margin: 180px 0px 10px 0;
+          // margin-top: 160px;
         }
       }
     }
@@ -262,11 +265,12 @@ section {
 article {
   .boost {
     background: url("images/bg-boost-desktop.svg"), hsl(257, 27%, 26%);
-    min-height: 200px;
+    // min-height: 00px;
     color: white;
     position: relative;
     display: block;
     text-align: center;
+    padding: 30px;
     p {
       padding-top: 50px;
       font-size: 50px;
@@ -339,7 +343,6 @@ footer {
       h1 {
         font-size: 45px !important;
         width: 100% !important;
-        margin-right: -10%;
       }
     }
   }
@@ -435,7 +438,7 @@ footer {
         transition: 0.3s;
         width: 100%;
         padding: 20px;
-
+        box-shadow: 0 10px 27px rgba(15, 26, 39, 0.582);
         z-index: 1;
         font-size: 20px;
         text-align: center;
@@ -480,17 +483,30 @@ footer {
         justify-items: flex-start;
         width: 100%;
       }
+      h1 {
+        font-size: 55px !important;
+      }
       img {
-        height: 500px;
-        left: 0;
+        height: 300px;
+        left: 10px;
         margin-bottom: 20px;
       }
     }
   }
   section {
+    padding: 15px;
     .short {
       background: url("images/bg-shorten-desktop.svg"), hsl(257, 27%, 26%);
       background-repeat: no-repeat;
+      transform: translateY(-60%) !important;
+
+      input {
+        padding: 5px;
+        height: 50px !important;
+      }
+      button {
+        height: 50px !important;
+      }
     }
     .result {
       width: 100%;
@@ -510,10 +526,12 @@ footer {
     }
     .extra {
       flex-direction: column;
-
-      padding: 5px;
+      width: 100%;
+      // padding: 5px !important;
       &::before {
-        display: none;
+        width: 2% !important;
+        height: 80% !important;
+        left: 47% !important;
       }
       img {
         left: 45% !important;
@@ -521,11 +539,11 @@ footer {
       .brand {
         text-align: center;
       }
-      .det{
-        margin-top: -1px !important;
+      .det {
+        margin: 80px 0px 80px 0px !important;
       }
-      .cust{
-        margin-top: -1px !important;
+      .cust {
+        margin: 0px 0px 10px 0 !important;
       }
     }
     .boost {
